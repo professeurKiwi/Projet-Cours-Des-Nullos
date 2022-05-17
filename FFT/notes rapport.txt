@@ -1,0 +1,2 @@
+Utilisation des classe Timer et Ticker de Mbed, avec les interruptions:
+https://os.mbed.com/teams/TVZ-Mechatronics-Team/wiki/Timers-interrupts-and-tasks
