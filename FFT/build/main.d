@@ -81,3 +81,4 @@
 .\build\main.o: mbed\sleep_api.h
 .\build\main.o: mbed\rtc_time.h
 .\build\main.o: mbed\Grove_LCD_RGB_Backlight.h
+.\build\main.o: FFT/FFT.h

@@ -360,9 +360,9 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>--gnu --no_rtti </MiscControls>
-              <Define> TARGET_LPC1768,  TARGET_M3,  TARGET_CORTEX_M,  TARGET_NXP,  TARGET_LPC176X,  TARGET_MBED_LPC1768,  TOOLCHAIN_ARM_STD,  TOOLCHAIN_ARM,  __CORTEX_M3,  ARM_MATH_CM3,  MBED_BUILD_TIMESTAMP=1425380042.87,  __MBED__=1,  __ASSERT_MSG, </Define>
+              <Define>TARGET_LPC1768,  TARGET_M3,  TARGET_CORTEX_M,  TARGET_NXP,  TARGET_LPC176X,  TARGET_MBED_LPC1768,  TOOLCHAIN_ARM_STD,  TOOLCHAIN_ARM,  __CORTEX_M3,  ARM_MATH_CM3,  MBED_BUILD_TIMESTAMP=1425380042.87,  __MBED__=1,  __ASSERT_MSG,</Define>
               <Undefine></Undefine>
-              <IncludePath>  .;  mbed;  mbed/TARGET_LPC1768;  mbed/TARGET_LPC1768/TARGET_NXP;  mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X;  mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768;  mbed/TARGET_LPC1768/TOOLCHAIN_ARM_STD</IncludePath>
+              <IncludePath>.;mbed;mbed/TARGET_LPC1768;mbed/TARGET_LPC1768/TARGET_NXP;mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X;mbed/TARGET_LPC1768/TARGET_NXP/TARGET_LPC176X/TARGET_MBED_LPC1768;mbed/TARGET_LPC1768/TOOLCHAIN_ARM_STD;.\fftw</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -430,6 +430,21 @@
               <FileName>Grove_LCD_RGB_Backlight.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>.\Grove_LCD_RGB_Backlight.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>fftw3.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\fftw\fftw3.h</FilePath>
+            </File>
+            <File>
+              <FileName>FFT.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\FFT\FFT.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FFT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\FFT\FFT.h</FilePath>
             </File>
           </Files>
         </Group>
