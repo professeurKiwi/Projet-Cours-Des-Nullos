@@ -1,2 +1,6 @@
 Utilisation des classe Timer et Ticker de Mbed, avec les interruptions:
 https://os.mbed.com/teams/TVZ-Mechatronics-Team/wiki/Timers-interrupts-and-tasks
+https://os.mbed.com/docs/mbed-os/v6.15/apis/ticker.html
+
+
+N = 2048 plus grosse puissance de 2 ne saturant pas la mémoires (32ko datashit), comme on va avoir N floats(4o) et N complexes (8o).
