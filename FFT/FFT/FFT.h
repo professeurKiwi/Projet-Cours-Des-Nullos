@@ -1,4 +1,5 @@
-//*** CODE PROVENANT DE https://riptutorial.com/algorithm/example/27088/radix-2-fft **//
+//*** CODE PROVENANT DE https://riptutorial.com/algorithm/example/27088/radix-2-fft ***//
+//mes commentaires, qui appuient les différence avec le code d'origine, sont indiqué par "//***"
 
 #define PI       3.1415926535897932384626433832795    // PI for sine/cos calculations
 #define TWOPI    6.283185307179586476925286766559     // 2*PI for sine/cos calculations
@@ -11,9 +12,9 @@
 struct complex
 {
 public:
-    float  Re, Im;        //*** changement du double en float pour �conomie de m�moire // Not so complicated after all
+    float  Re, Im;        //*** changement du double en float pour économie de mémoire // Not so complicated after all
 };
 
-bool isPwrTwo(int N, int *M);
 
-void rad2FFT(int N, float *x, complex *DFT); //*** addaptation pour prendre un tableau de float
+//void rad2FFT(int N, float *x, complex *DFT); //*** addaptation pour prendre un tableau de float
+void FFT(int N, float *x, complex *TFD);

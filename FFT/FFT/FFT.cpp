@@ -1,27 +1,14 @@
 //*** CODE PROVENANT DE https://riptutorial.com/algorithm/example/27088/radix-2-fft **//
+//mes commentaires, qui appuient les différence avec le code d'origine, sont indiqué par "//***"
 
 #include "FFT.h"
 #include <math.h>
 
-// Returns true if N is a power of 2
-bool isPwrTwo(int N, int *M)
+
+
+void FFT(int N, float *x, complex *DFT)//***réaddaptation du code pour un tableau de flotant
 {
-    *M = (int)ceil(log10((double)N) * log10_2_INV);// M is number of stages to perform. 2^M = N
-    int NN = (int)pow(2.0, *M);
-    if ((NN != N) || (NN == 0)) // Check N is a power of 2. 
-        return false;
-
-    return true;
-}
-
-void rad2FFT(int N, float *x, complex *DFT)//***réaddaptation du code pour un tableau de flotant
-{
-    int M = 0;
-
-    // Check if power of two. If not, exit        
-    if (!isPwrTwo(N, &M))
-        //***throw "Rad2FFT(): N must be a power of 2 for Radix FFT"; pas de gestion des exceptions!
-				return;
+    int M = (int)ceil(log10((double)N) * log10_2_INV); //*** 2^M = N
 
     // Integer Variables
 
@@ -74,7 +61,7 @@ void rad2FFT(int N, float *x, complex *DFT)//***réaddaptation du code pour un t
     // FFT Computation by butterfly calculation
     for (stage = 1; stage <= M; stage++) // Loop for M stages, where 2^M = N
     {
-			BSep = (int)(powf(2, stage)); // Separation between butterflies = 2^stage
+        BSep = (int)(powf(2, stage)); // Separation between butterflies = 2^stage
         P = N / BSep;             // Similar Wn's in this stage = N/Bsep
         BWidth = BSep / 2;     // Butterfly width (spacing between opposite points) = Separation / 2.
 
@@ -132,3 +119,4 @@ void rad2FFT(int N, float *x, complex *DFT)//***réaddaptation du code pour un t
     DFT = 0;
     pX = 0;
 }
+
